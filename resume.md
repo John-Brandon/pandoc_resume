@@ -1,100 +1,92 @@
-Johnny Coder
+John R. Brandon, PhD 
 ============
 
+
+-------------------     --------------------------------------- 
+jbrandon@gmail.com       [Linkedin Profile](www.linkedin.com/in/john-brandon/)
+(206) 919--6541          [Code on GitHub](www.github.com/John-Brandon)
+Pacifica,CA 
+-------------------     ---------------------------------------
+
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+John provides modeling and statistical support to his clients, including a National Science
+Foundation initiative for Fishery Science, and The Makah Tribal Council (Neah Bay, WA). Previously he worked
+as a staff environmental consultant, developing photo-identification, and point- and line-transect survey designs for wildlife monitoring and
+mitigation studies in Alaska and Canada. His field assignments have included vessel and aerial surveys for marine
+protected species in the Pacific, Atlantic and Arctic Ocean. 
 
 ----
 
-Education
+Education 
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+2003-2009
+:   **PhD, Quantitative Fisheries Science**. University of Washington (Seattle):
+%:    *Quantifying Uncertainty and Incorporating Environmental Stochasticity in Stock Assessments of
+%    Marine Mammals.*
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+1994-1998
+:   **BSc, Biology, Ecology and Evolution**. University of California, San Diego: National Merit Scholar; Provost Honors; Men's Soccer; Teaching
+    Assisstant.
+:    *Minors: Climate Science (Scripps Institute of Oceanagraphy) and Anthropology*
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
+Professional Positions 
+---------- 
+2016-–present
+:   **Population Dynamics and Statistical Consultant to the The Makah Tribe, Neah Bay, WA:** 
+:   Computational risk assessments of proposed gray whale hunt plans and catch limit algorithms. 
+Involves collaboration with lawyers representing the tribe; the tribe's lead biologist; federal agency and international scientists. 
+This work is relevant to both: (i) the International Whaling Commission which has jurisdiction over the hunt quotas, and (ii) the ongoing U.S. domestic process under NOAA for determining whether the Makah Tribe should be granted a statutory waiver 
+to resume their whaling tradition as provided in the Treaty of Neah Bay (1855).
 
-    *Minor: Awesomeology*
+2014–present
+:   **Management Strategy Evaluation Consultant:** 
+:   U.S. National Science Foundation’s Industry and University Cooperative Research Center for Fishery Science. This work has involved collaboration with 
+a team of scientists, representatives from Atlantic commercial finfish fisheries, and agency scientists (NMFS). The focus of research is applying analytical 
+methods to reduce uncertainty in estimates of conservation risk for commercial fisheries bycatch of marine mammals. 
+A recent project, funded by the Western Pacific Fisheries Management Council (Honolulu, HI), was published and includes an open source code repository for reproducibility (Brandon et al. 2017).
+ 
+2009–2015
+:	  **Biostatistician / Fisheries Scientist (Staff):** 
+:   Aerial Survey Lead for monitoring and mitigation efforts around Shell’s Arctic Offshore Exploratory Drilling Program: LGL and Greeneridge Sciences, Inc. 
+I trained local Alaskan Native Iñuit to join a crew of field scientists and collect aerial
+survey data; coordinated LGL’s aerial survey effort with our client’s oil and gas operations in the
+Arctic, and; developed simulations varying spatial survey effort allocation, which led to an aerial
+survey design that maximized the statistical power of detecting industrial effects on the bowhead
+whale migration route. Developed R (GIS) code to automate post-survey map production, including
+overlapping aerial effort and sightings data, acoustic call detections, marine industrial activities
+and shipboard sightings data.  The maps were used to support analyses of potential disturbance and
+meet permit reporting requirements.
 
-Experience
+Selected Publications and Reports
 ----------
+2017 
+:    Brandon, J.R., Punt, A.E., Moreno, P. and Reeves, R.R. 2017. Toward a tier system approach for calculating limits on human-caused mortality of marine mammals. *ICES J. Mar. Sci.* 74: 877 – 87.
 
-**Your Most Recent Work Experience:**
+2015  
+:    Robertson, F.C., Koski, W.R, Brandon, J.R., Thomas, T.A. and Trites, A.W. 2015. Correction factors account for the availability of bowhead whales exposed to seismic operations in the Beaufort Sea. *J. Cetacean Res. Manage.* 15: 35 – 44. 
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+2014
+:    LGL Alaska Research Associates, Inc., JASCO Applied Sciences, Inc., and Greeneridge Sciences, Inc. 2014. Joint Monitoring Program in the Chukchi and Beaufort Seas, 2012. LGL Alaska Final Report P1272-2 for Shell Offshore, Inc. ION Geophysical, Inc., and Other Industry Contributors, National Marine Fisheries Service, and U.S. Fish and Wildlife Service. 320 p. plus Appendices. 
 
-* First item
+2010
+:    Alter, S.E., Simmonds, M.P and Brandon, J.R. 2010. Forecasting the consequences of climate-driven shifts in human behavior on cetaceans. *Mar. Policy.* 34: 943 – 954.
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+2009
+:    Kaplan, C.C., G.C. White, T.L. McGuire, J.R. Brandon, S.W. Raborn, M.R. Link, and Blees, M.K. 2009. Application of mark-resight methods to estimate abundance of Cook Inlet Beluga Whales. Chapter 2 In: Photo-identification of beluga whales in Upper Cook Inlet, Alaska: Mark analysis, mark-resight estimates, and color analysis from photographs taken in 2008. Report prepared by LGL Alaska Research Associates, Inc., Anchorage, AK, for National Fish and Wildlife Foundation, Chevron, and ConocoPhillips Alaska, Inc. 
 
-**That Other Job You Had**
+2007
+:    Turvey, S.T., Pitman, R.L., Taylor, B.L., Barlow, J., Tomonari, A., Barret, L.A., Zhao, X.,  Reeves, R.R., Stewart, B.S., Wang, K., Wei, Z., Zhang, X., Pusser, L.T., Richlen, M.R., Brandon, J.R. and Wang, D. 2007. First human-caused extinction of a cetacean species? *Biol. Letters.* 3: 537--540.
 
-Also with a short description.
+Bio 
+----
 
-Technical Experience
---------------------
-
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
-
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
-
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
-
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
-----------------------------------------
-
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
+Originally from Davis, CA. Mom and Dad are a botanist and entomologist. Eldest son of two; brother captains marine ferries in Alaska.
+Became interested in wildlife science and quota limits when I was taught to how to fish and hunt as a kid. Now married, and a father of two. 
+I enjoy gardening and surfing in my free time. 
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <jbrandon@gmail.com> • (206) 919-6541 • Pacifica, CA
+> 

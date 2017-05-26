@@ -1,7 +1,7 @@
 *.tuc
 *.log
-*.pdf
-*.html
+# *.pdf
+# *.html
 resume.tex
 *.swo
 *.swp

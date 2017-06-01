@@ -10,18 +10,22 @@
   \enableregime[utf-8]  
   \setupcolors[state=start]
 \stopmode
+
 $if(mainlang)$
-\mainlanguage[$mainlang$]
+  \mainlanguage[$mainlang$]
 $endif$
 
 \setupcolor[hex]
-% \definecolor[titlegrey][h=757575]  % gray title for name
-\definecolor[titlegrey][h=000000]  % changed from gray to black title for name
-\definecolor[sectioncolor][h=397249]
-\definecolor[rulecolor][h=9cb770]
+% \definecolor[title_name][h=757575]   % gray title for name
+% \definecolor[title_name][h=000000]   % changed from gray to black title for name -JBrandon
+\definecolor[title_name][h=9ea09b]     % trying dark grey title
+\definecolor[sectioncolor][h=397249]   % darker green for section headings (e.g. "Professional Experience")
+\definecolor[subsection][h=1d44d0]     % not sure what is considered subsection, this might be overridden below?
+\definecolor[subsubsection][h=5aad06]  % hyperlinks including email address at bottom -- testing bright green
+\definecolor[rulecolor][h=9cb770]      % lighter green for block lines left of section headings
 
 % Enable hyperlinks
-\setupinteraction[state=start, color=sectioncolor]
+\setupinteraction[state=start, color=subsubsection]
 
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
@@ -35,35 +39,62 @@ $endif$
 
 \setupwhitespace[medium]
 
+%  Thickness of horizontal line 
 \setupblackrules[width=31mm, color=rulecolor]
 
-\setuphead[chapter]      [style=\tfd]
-\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
-\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
-                          before={\leavevmode\blackrule\hspace}]
+% \setuphead[chapter]      [style=\tfd]
+
+% Seems to set size and color for name at title -------------------------------
+\setuphead[section]      [style=\tfd\bf, color=title_name, align=middle,
+                          before={\blank[none]},
+                          after={\blank[none]}]
+
+% Format subsection headers, e.g. 'Professional Experience'
+\setuphead[subsection]   [style=\tfa\bf, color=sectioncolor, align=right,
+                          before={\blank[medium]\leavevmode\blackrule\hspace},
+                          % after={\blank[none]},
+                          beforesection={\blank[none]}]
+
 \setuphead[subsubsection][style=\bf]
 
 $if(number-sections)$
 $else$
-\setuphead[chapter, section, subsection, subsubsection][number=no]
+  \setuphead[chapter, section, subsection, subsubsection][number=no]
 $endif$
 
 %\setupdescriptions[width=10mm]
 
+% Format 'YYYY     Work Description' bullets ---------------------------------
 \definedescription
   [description]
   [headstyle=bold, style=normal,
-   location=hanging, width=18mm, distance=14mm, margin=0cm]
+   location=hanging, width=18mm, distance=14mm, margin=0cm,
+   before={\blank[medium]},
+   after={}]
+   % after={\blank[medium]}]  % space after a list of bullet points 
 
-\setupitemize[autointro, packed]    % prevent orphan list intro
-\setupitemize[indentnext=no]
+% Pass some variables for formatting bulleted (non-dated) lists --------------
+% e.g. bullet symbols under "Computing Experience"
+% For a list of symbols, see Table 13.1: http://pmrb.free.fr/contextref.pdf
+\setupitemize[1][symbol=5]  % First level
+\setupitemize[2][symbol=2]  % Second level
 
-\setupfloat[figure][default={here,nonumber}]
-\setupfloat[table][default={here,nonumber}]
+\setupitemize[autointro, packed]  % prevent orphan list intro
 
-\setuptables[textwidth=max, HL=none]
+% Internal spacing between bullets in 'YYYY     Work Description'  list 
+% More examples of this command here: 
+% http://wiki.contextgarden.net/Command/setupitemgroup
+\setupitemize[indentnext=no,
+              before={},
+              after={\blank[none]}]
 
-\setupthinrules[width=15em] % width of horizontal rules
+% Currently not using tables or figures
+% \setupfloat[figure][default={here,nonumber}]
+% \setupfloat[table][default={here,nonumber}]
+
+% \setuptables[textwidth=max, HL=none]
+
+\setupthinrules[width=15em]  % width of horizontal rules
 
 \setupdelimitedtext
   [blockquote]
@@ -96,7 +127,7 @@ $endif$
 \stopalignment
 $endif$
 $for(include-before)$
-$include-before$
+  $include-before$
 $endfor$
 $if(toc)$
 \placecontent
@@ -105,6 +136,6 @@ $endif$
 $body$
 
 $for(include-after)$
-$include-after$
+  $include-after$
 $endfor$
 \stoptext
